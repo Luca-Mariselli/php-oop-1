@@ -1,3 +1,19 @@
+<?php
+class Movie {
+    public $titolo;
+    public $durata;
+    public $paese;
+    public $prezzo;
+
+    public function __construct($dato1, $dato2, $dato3, $dato4){
+        $this->titolo = $dato1;
+        $this->durata = $dato2;
+        $this->paese = $dato3;
+        $this->prezzo = $dato4;
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
