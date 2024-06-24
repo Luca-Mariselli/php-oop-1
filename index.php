@@ -12,9 +12,9 @@ class Movie {
         $this->prezzo = $dato4;
     }
 
-    // public function getFilm(){
-    //     return $this->titolo  $this->durata  $this->paese  $this->prezzo;
-    // }
+    public function getFilm(){
+        return "<li class='my-li'>" . "$this->titolo" . "</li>" . "<li class='my-li'>" ."$this->durata" . "</li>" . "<li class='my-li'>" . "$this->paese" . "</li>" . "<li class='my-li'>" . "$this->prezzo". "</li>";
+    }
 
 }
 
@@ -36,11 +36,9 @@ $films = [$film1, $film2, $film3, $film4];
 </head>
 <body>
    <ul>
-    <li><?= "$film1->titolo" ?></li>
-    <li><?= "$film2->titolo" ?></li>
-    <li><?= "$film3->titolo" ?></li>
-    <li><?= "$film4->titolo" ?></li>
-    
+    <?php foreach($films as $film) { ?>
+        <li><?php echo $film->getFilm()?></li>
+    <?php } ?>  
    </ul> 
 </body>
 </html>
