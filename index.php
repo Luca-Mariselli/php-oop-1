@@ -11,7 +11,18 @@ class Movie {
         $this->paese = $dato3;
         $this->prezzo = $dato4;
     }
+
+    // public function getPaese(){
+    //     if $this->paese; = 1
+    //     $this->paese = 'Italia';
+    // }
+
 }
+
+$film1 = new Movie ("Spiderman", 1.4, "USA", 100);
+$film2 = new Movie ("Prova2", 1.5, "Italia", 1000);
+$film3 = new Movie ("Hellboy", 2, "Afghanistan", 100);
+$film4 = new Movie ("The Last of Us", 2.2, "USA", 100);
 ?>
 
 <!DOCTYPE html>
